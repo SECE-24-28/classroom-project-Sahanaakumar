@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: beige;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    background: white;
+    padding: 30px;
+    width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid beige;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.gender label {
+    font-size: 14px;
+    color: maroon;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: blue;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: blue;
+}
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        width: 90%;
+    }
+}
